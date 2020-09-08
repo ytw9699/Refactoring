@@ -18,6 +18,18 @@ public class Rental {//Rental은 대여 정보 클래스다
         return _daysRented;
     }
     
+    int getFrequentRenterPoints() {
+    	
+        if((getMovie().getPriceCode() == Movie.NEW_RELEASE) && getDaysRented() > 1){
+        	
+        	return 2;//최신물을 이틀 이상 대여하면 2포인트 지급
+        	
+        }else {
+        	
+        	return 1;//그 외엔 1포인트 지급
+        }
+    }
+    
     double getCharge() {
 
         double result = 0;
@@ -43,5 +55,4 @@ public class Rental {//Rental은 대여 정보 클래스다
 
         return result;
     }
-    
 }
