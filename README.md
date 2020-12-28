@@ -1,2 +1,5 @@
-# Refactoring
-Refactoring_Examples
+## Purpose
+Dokky 프로젝트를 진행하며 리팩토링에 대한 관심을 가지고 있었다.
+그 이후 리팩토링에 대해 멘토님이랑 얘기를 나눴고 선물해주신 책이다.
+
+
