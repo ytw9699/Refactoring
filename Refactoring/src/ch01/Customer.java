@@ -27,8 +27,8 @@ public class Customer {//Customer는 고객 클래스다
 
     public String statement() {
 
-        double totalAmount = 0;
-        int frequentRenterPoints = 0;
+        double totalAmount = 0;//누적 대여료
+        int frequentRenterPoints = 0;//적립 포인트
         Enumeration rentals = _rentals.elements();
         String result = getName() + " 고객님의 대여 기록\\n";
 
